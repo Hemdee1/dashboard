@@ -1,13 +1,9 @@
 import { ordersData } from "@/data";
-import { DownloadIcon } from "@/icons";
-import Image from "next/image";
 import OrderBox from "./orderBox";
-
-const paid = true;
 
 const LastOrder = () => {
   return (
-    <section className="w-[806px] py-5 px-5 bg-white border border-[#EDF2F7] rounded-[14px]">
+    <section className="w-full py-5 px-5 bg-white border border-[#EDF2F7] rounded-[14px]">
       <div className="flex justify-between items-center">
         <h2 className="text-lg font-semibold">Last Orders</h2>
         <button className="text-lg font-medium text-primary">See All</button>

@@ -3,7 +3,7 @@ import ArrowDownIcon from "@/icons/arrowDown";
 
 const SalesTrend = () => {
   return (
-    <section className="w-[806px] h-[374px] py-4 px-5 bg-white border border-[#EDF2F7] rounded-[14px]">
+    <section className="w-full h-[380px] py-4 px-5 bg-white border border-[#EDF2F7] rounded-[14px]">
       <div className="flex justify-between items-center">
         <h2 className="text-lg font-semibold">Sales Trends</h2>
         <div className="flex gap-2.5 items-center">

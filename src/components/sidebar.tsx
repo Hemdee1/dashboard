@@ -15,8 +15,8 @@ import {
 
 const Sidebar = () => {
   return (
-    <aside className="w-20 z-50 h-screen py-5 bg-[#F7F8FA] fixed left-0 top-0 border-r border-[#EBECF2]">
-      <div className="flex flex-col gap-8 items-center">
+    <aside className="w-20 z-50 h-screen overflow-y-scroll 2xl:overflow-y-visible scrollbar flex flex-col justify-between gap-10 py-5 bg-[#F7F8FA] fixed left-0 top-0 border-r border-[#EBECF2]">
+      <div className="flex flex-col gap-6 2xl:gap-8 items-center">
         <button>
           <Logo />
         </button>
@@ -56,7 +56,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 items-center mt-20">
+      <div className="flex flex-col gap-6 2xl:gap-8 items-center mb-10">
         <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <ArrowRightIcon />
         </button>

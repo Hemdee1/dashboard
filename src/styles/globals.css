@@ -16,16 +16,12 @@
   }
 } */
 
-/* @font-face {
-  font-family: "Plus-Jakarta";
-  src: url("/fonts/Plus-Jakarta.ttf") format("ttf");
-  font-weight: 200 700;
-  font-display: swap;
-  font-style: normal;
-} */
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+  background: #f7f8fa;
+}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
 }
