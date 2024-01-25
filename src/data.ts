@@ -1,3 +1,10 @@
+import {
+  BoxTickIcon,
+  CoinIcon,
+  RotateBoxIcon,
+  ShoppingCartIcon,
+} from "./icons";
+
 export const range = [60, 50, 40, 30, 20, 10, 0];
 
 export const salesData = [
@@ -86,5 +93,74 @@ export const ordersData = [
     date: "Nov 13, 2023",
     amount: "78,000",
     status: "paid",
+  },
+  {
+    img: "/images/user5.png",
+    name: "Phillip Lubin",
+    date: "Nov 13, 2023",
+    amount: "78,000",
+    status: "paid",
+  },
+];
+
+export const comparisonData = [
+  {
+    Icon: BoxTickIcon,
+    title: "Total Order",
+    value: 350,
+    prevMonthValue: 200,
+    rate: 23.5,
+  },
+  {
+    Icon: RotateBoxIcon,
+    title: "Total Refund",
+    value: 270,
+    prevMonthValue: 300,
+    rate: 23.5,
+  },
+  {
+    Icon: ShoppingCartIcon,
+    title: "Average Sales",
+    value: 1567,
+    prevMonthValue: 1700,
+    rate: 23.5,
+  },
+  {
+    Icon: CoinIcon,
+    title: "Total Income",
+    value: 350,
+    prevMonthValue: 200,
+    rate: 23.5,
+  },
+];
+
+export const topPlatformData = [
+  {
+    title: "Book Bazaar",
+    price: "2,500,000",
+    interest: 15,
+    level: 60,
+    color: "#6160DC",
+  },
+  {
+    title: "Artisan Aisle",
+    price: "1,800,000",
+    interest: 10,
+    level: 40,
+    color: "#54C5EB",
+  },
+  {
+    title: "Toy Troop",
+    price: "1,200,000",
+    interest: 8,
+    level: 25,
+    color: "#FFB74A",
+  },
+  {
+    title: "XStore",
+    price: "800,000",
+    interest: 5,
+    level: 10,
+    color: "#FF4A55",
   },
 ];

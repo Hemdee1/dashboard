@@ -1,0 +1,21 @@
+import { topPlatformData } from "@/data";
+import PlatformBox from "./platformBox";
+
+const TopPlatform = () => {
+  return (
+    <section className="py-4 px-5 bg-white border border-[#EDF2F7] rounded-[14px]">
+      <div className="flex justify-between items-center">
+        <h2 className="text-lg font-semibold text-[#26282C]">Top Platform</h2>
+        <button className="text-lg font-medium text-primary">See All</button>
+      </div>
+
+      <div className="mt-5 space-y-5">
+        {topPlatformData.map((data, index) => (
+          <PlatformBox key={index} data={data} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default TopPlatform;
