@@ -4,6 +4,7 @@ import BoxIcon from "./box";
 import CalendarIcon from "./calendar";
 import CategoryIcon from "./category";
 import DiscountIcon from "./discount";
+import DownloadIcon from "./download";
 import InfoIcon from "./info";
 import Logo from "./logo";
 import LogoutIcon from "./logout";
@@ -30,4 +31,5 @@ export {
   SettingIcon,
   SunIcon,
   TrendUpIcon,
+  DownloadIcon,
 };

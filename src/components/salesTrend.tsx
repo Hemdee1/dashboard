@@ -7,9 +7,9 @@ const SalesTrend = () => {
       <div className="flex justify-between items-center">
         <h2 className="text-lg font-semibold">Sales Trends</h2>
         <div className="flex gap-2.5 items-center">
-          <h4 className="text-sm font-medium">Short by :</h4>
+          <h4 className="text-sm font-medium">Sort by :</h4>
           <div className="flex px-4 py-2 gap-2.5 items-center rounded-full border border-[#E1DFDF] cursor-pointer">
-            <span className="text-xs">Weekly</span>
+            <span className="text-xs font-Inter">Weekly</span>
             <ArrowDownIcon />
           </div>
         </div>

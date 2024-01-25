@@ -21,27 +21,27 @@ const Sidebar = () => {
           <Logo />
         </button>
 
-        <button className="p-2 rounded-full bg-transparent hover:bg-white transition-colors duration-500">
+        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <CategoryIcon />
         </button>
 
-        <button className="p-2 rounded-full bg-transparent hover:bg-white transition-colors duration-500">
+        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <TrendUpIcon />
         </button>
 
-        <button className="p-2 rounded-full bg-transparent hover:bg-white transition-colors duration-500">
+        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <ProfileIcon />
         </button>
 
-        <button className="p-2 rounded-full bg-transparent hover:bg-white transition-colors duration-500">
+        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <BoxIcon />
         </button>
 
-        <button className="p-2 rounded-full bg-transparent hover:bg-white transition-colors duration-500">
+        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <DiscountIcon />
         </button>
 
-        <button className="p-2 rounded-full bg-transparent hover:bg-white transition-colors duration-500">
+        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <InfoIcon />
         </button>
 
@@ -57,15 +57,15 @@ const Sidebar = () => {
       </div>
 
       <div className="flex flex-col gap-8 items-center mt-20">
-        <button className="p-2 rounded-full bg-transparent hover:bg-white transition-colors duration-500">
+        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <ArrowRightIcon />
         </button>
 
-        <button className="p-2 rounded-full bg-transparent hover:bg-white transition-colors duration-500">
+        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <SettingIcon />
         </button>
 
-        <button className="p-2 rounded-full bg-transparent hover:bg-white transition-colors duration-500">
+        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500">
           <LogoutIcon />
         </button>
       </div>

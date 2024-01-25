@@ -50,3 +50,41 @@ export const salesData = [
     sale: 37,
   },
 ];
+
+export const ordersData = [
+  {
+    img: "/images/user1.png",
+    name: "Marcus Bergson",
+    date: "Nov 15, 2023",
+    amount: "80,000",
+    status: "paid",
+  },
+  {
+    img: "/images/user2.png",
+    name: "Jaydon Vaccaro",
+    date: "Nov 15, 2023",
+    amount: "150,000",
+    status: "refund",
+  },
+  {
+    img: "/images/user3.png",
+    name: "Corey Schleifer",
+    date: "Nov 14, 2023",
+    amount: "87,000",
+    status: "paid",
+  },
+  {
+    img: "/images/user4.png",
+    name: "Cooper Press",
+    date: "Nov 14, 2023",
+    amount: "100,000",
+    status: "refund",
+  },
+  {
+    img: "/images/user5.png",
+    name: "Phillip Lubin",
+    date: "Nov 13, 2023",
+    amount: "78,000",
+    status: "paid",
+  },
+];
