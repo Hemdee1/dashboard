@@ -16,14 +16,14 @@ export default function Home() {
   return (
     <div className={`${jakarta.className} ${inter.variable}`}>
       <Layout>
-        <div className="pl-[100px] pt-[106px] pb-5 pr-5 bg-[#FAFAFA] space-y-5">
-          <div className="flex gap-5">
-            <div className="flex gap-5 flex-col w-full">
+        <div className="pl-5 sm:pl-[100px] pt-5 sm:pt-[106px] pb-5 pr-5 bg-[#FAFAFA] space-y-5">
+          <div className="flex gap-5 flex-col">
+            <div className="flex gap-5 flex-col lg:flex-row">
               <SalesTrend />
-              <LastOrder />
-            </div>
-            <div className="flex gap-5 flex-col">
               <PrevMonthComparison />
+            </div>
+            <div className="flex gap-5 flex-col lg:flex-row">
+              <LastOrder />
               <TopPlatform />
             </div>
           </div>

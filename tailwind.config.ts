@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        lg: "1150px",
+      },
       fontFamily: {
         Inter: ["var(--font-inter)"],
       },

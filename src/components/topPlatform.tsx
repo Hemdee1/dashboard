@@ -3,7 +3,7 @@ import PlatformBox from "./platformBox";
 
 const TopPlatform = () => {
   return (
-    <section className="py-4 px-5 bg-white border border-[#EDF2F7] rounded-[14px]">
+    <section className="py-4 px-5 bg-white border border-[#EDF2F7] rounded-[14px] sm:min-w-[496px]">
       <div className="flex justify-between items-center">
         <h2 className="text-lg font-semibold text-[#26282C]">Top Platform</h2>
         <button className="text-lg font-medium text-primary">See All</button>

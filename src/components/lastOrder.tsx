@@ -3,21 +3,21 @@ import OrderBox from "./orderBox";
 
 const LastOrder = () => {
   return (
-    <section className="w-full py-5 px-5 bg-white border border-[#EDF2F7] rounded-[14px]">
-      <div className="flex justify-between items-center">
+    <section className="w-full pt-5 bg-white border border-[#EDF2F7] rounded-[14px]">
+      <div className="flex justify-between items-center px-5">
         <h2 className="text-lg font-semibold">Last Orders</h2>
         <button className="text-lg font-medium text-primary">See All</button>
       </div>
 
-      <div className="mt-4">
-        <div className="flex text-[#9CA4AB]">
+      <div className="mt-4 overflow-x-scroll scrollbar-x pb-5 px-5">
+        <div className="flex text-[#9CA4AB] w-[500px] sm:w-auto">
           <span className="flex-[1.5]">Name</span>
           <span className="flex-[1]">Date</span>
           <span className="flex-[1]">Amount</span>
           <span className="flex-[1]">Status</span>
           <span className="flex-[0.5]">Invoice</span>
         </div>
-        <div className="mt-5 border-t border-[#EDF2F6] divide-y divide-[#EDF2F6]">
+        <div className="mt-5 border-t border-[#EDF2F6] divide-y divide-[#EDF2F6] w-[500px] sm:w-auto">
           {ordersData.map((order, index) => (
             <OrderBox key={index} order={order} />
           ))}

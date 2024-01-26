@@ -12,7 +12,7 @@ type OrderType = {
 const OrderBox = ({ order }: { order: OrderType }) => {
   const { amount, date, img, name, status } = order;
   return (
-    <article className="py-4 flex items-center">
+    <article className="py-4 flex items-center gap-2">
       <div className="flex gap-2.5 items-center flex-[1.5]">
         <Image alt={name} src={img} height={32} width={32} />
         <span className="text-secondary font-medium">{name}</span>

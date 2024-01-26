@@ -8,7 +8,7 @@ const ComparisonBox = ({ data }: { data: (typeof comparisonData)[0] }) => {
   const decrease = prevMonthValue > value;
 
   return (
-    <article className="p-4 bg-white w-[240px] border border-[#EDF2F7] rounded-[14px]">
+    <article className="p-4 bg-white w-full lg:w-[240px] border border-[#EDF2F7] rounded-[14px]">
       <div className="flex justify-between items-center">
         <span className="w-10 h-10 border-[0.7px] border-[#E6E6E6] rounded-full grid place-content-center">
           <Icon />

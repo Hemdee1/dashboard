@@ -13,6 +13,7 @@ import InfoIcon from "./info";
 import Logo from "./logo";
 import LogoutIcon from "./logout";
 import MoonIcon from "./moon";
+import OpenBar from "./openBar";
 import ProfileIcon from "./profile";
 import RotateBoxIcon from "./rotateBox";
 import SearchIcon from "./search";
@@ -44,4 +45,5 @@ export {
   CoinIcon,
   IncreaseGraph,
   DecreaseGraph,
+  OpenBar,
 };

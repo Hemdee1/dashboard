@@ -25,3 +25,13 @@
   background: rgba(0, 0, 0, 0.2);
   border-radius: 100px;
 }
+
+.scrollbar-x::-webkit-scrollbar {
+  height: 4px;
+  background: #f7f8fa;
+}
+
+.scrollbar-x::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+}

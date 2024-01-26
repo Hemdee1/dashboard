@@ -89,14 +89,7 @@ export const ordersData = [
   },
   {
     img: "/images/user5.png",
-    name: "Phillip Lubin",
-    date: "Nov 13, 2023",
-    amount: "78,000",
-    status: "paid",
-  },
-  {
-    img: "/images/user5.png",
-    name: "Phillip Lubin",
+    name: "Phillip Lubinn",
     date: "Nov 13, 2023",
     amount: "78,000",
     status: "paid",

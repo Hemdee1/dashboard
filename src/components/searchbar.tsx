@@ -2,7 +2,7 @@ import { SearchIcon } from "@/icons";
 
 const SearchBar = () => {
   return (
-    <div className="relative w-[350px] pl-10 pr-3 h-12 bg-white border border-[#DADDDD] rounded-full overflow-hidden">
+    <div className="relative sm:w-[350px] max-w-full pl-10 pr-3 h-10 sm:h-12 bg-white border border-[#DADDDD] rounded-full overflow-hidden">
       <span className="absolute left-3 top-1/2 -translate-y-1/2">
         <SearchIcon />
       </span>
@@ -10,7 +10,7 @@ const SearchBar = () => {
         type="search"
         name=""
         id=""
-        className="h-full w-full outline-none"
+        className="h-full w-full outline-none text-sm sm:text-base"
         placeholder="Search..."
       />
     </div>
