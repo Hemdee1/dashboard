@@ -1,6 +1,4 @@
 import { comparisonData } from "@/data";
-import { BoxTickIcon, IncreaseGraph } from "@/icons";
-import TrendingUpArrow from "@/icons/trendingUpArrow";
 import ComparisonBox from "./comparisonBox";
 
 const PrevMonthComparison = () => {

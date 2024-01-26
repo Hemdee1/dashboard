@@ -10,14 +10,14 @@ const LastOrder = () => {
       </div>
 
       <div className="mt-4 overflow-x-scroll scrollbar-x pb-5 px-5">
-        <div className="flex text-[#9CA4AB] w-[500px] sm:w-auto">
+        <div className="flex text-[#9CA4AB] w-[700px] sm:w-auto">
           <span className="flex-[1.5]">Name</span>
           <span className="flex-[1]">Date</span>
           <span className="flex-[1]">Amount</span>
           <span className="flex-[1]">Status</span>
           <span className="flex-[0.5]">Invoice</span>
         </div>
-        <div className="mt-5 border-t border-[#EDF2F6] divide-y divide-[#EDF2F6] w-[500px] sm:w-auto">
+        <div className="mt-5 border-t border-[#EDF2F6] divide-y divide-[#EDF2F6] w-[700px] sm:w-auto">
           {ordersData.map((order, index) => (
             <OrderBox key={index} order={order} />
           ))}
