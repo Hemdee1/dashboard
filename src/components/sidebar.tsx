@@ -21,79 +21,78 @@ const Sidebar = () => {
   const ref = useOutsideClick(() => setOpenSidebar(false));
 
   return (
-    <aside
-      ref={ref}
-      className={`w-20 z-50 h-screen overflow-y-scroll 2xl:overflow-y-visible scrollbar flex flex-col justify-between gap-24 py-5 bg-[#F7F8FA] fixed sm:left-0 top-0 border-r border-[#EBECF2] transition-all duration-500 ${
-        openSidebar ? "left-0" : "-left-20"
-      }`}
-    >
+    <div ref={ref}>
       {/*SIDEBAR BUTTON  */}
       <button
-        className={`fixed left-3 top-5 p-2 z-30 sm:hidden rounded-full bg-primary transition-all duration-500 ${
-          openSidebar ? "opacity-0 invisible" : "opacity-100 visible"
-        }`}
+        className="fixed left-3 top-5 p-2 z-30 sm:hidden rounded-full bg-primary"
         onClick={() => setOpenSidebar((prev) => !prev)}
       >
         <OpenBar />
       </button>
 
-      <div className="flex flex-col gap-6 2xl:gap-8 items-center">
-        <button>
-          <Logo />
-        </button>
-
-        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-          <CategoryIcon />
-          <span className="absolute -right-4 2xl:-right-5 top-1/2 -translate-y-1/2">
-            <SelectBar />
-          </span>
-        </button>
-
-        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-          <TrendUpIcon />
-        </button>
-
-        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-          <ProfileIcon />
-        </button>
-
-        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-          <BoxIcon />
-        </button>
-
-        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-          <DiscountIcon />
-        </button>
-
-        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-          <InfoIcon />
-        </button>
-
-        <div className="w-[46px] p-2 bg-white h-[92px] rounded-full flex flex-col gap-4">
+      <aside
+        className={`w-20 z-50 h-screen overflow-y-scroll 2xl:overflow-y-visible scrollbar flex flex-col justify-between gap-24 py-5 bg-[#F7F8FA] fixed sm:left-0 top-0 border-r border-[#EBECF2] transition-all duration-500 ${
+          openSidebar ? "left-0" : "-left-20"
+        }`}
+      >
+        <div className="flex flex-col gap-6 2xl:gap-8 items-center">
           <button>
-            <SunIcon />
+            <Logo />
           </button>
 
-          <button>
-            <MoonIcon />
+          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+            <CategoryIcon />
+            <span className="absolute -right-4 2xl:-right-5 top-1/2 -translate-y-1/2">
+              <SelectBar />
+            </span>
+          </button>
+
+          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+            <TrendUpIcon />
+          </button>
+
+          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+            <ProfileIcon />
+          </button>
+
+          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+            <BoxIcon />
+          </button>
+
+          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+            <DiscountIcon />
+          </button>
+
+          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+            <InfoIcon />
+          </button>
+
+          <div className="w-[46px] p-2 bg-white h-[92px] rounded-full flex flex-col gap-4">
+            <button>
+              <SunIcon />
+            </button>
+
+            <button>
+              <MoonIcon />
+            </button>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-6 2xl:gap-8 items-center mb-10">
+          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+            <ArrowRightIcon />
+          </button>
+
+          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+            <SettingIcon />
+          </button>
+
+          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+            <LogoutIcon />
           </button>
         </div>
-      </div>
-
-      <div className="flex flex-col gap-6 2xl:gap-8 items-center mb-10">
-        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-          <ArrowRightIcon />
-        </button>
-
-        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-          <SettingIcon />
-        </button>
-
-        <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-          <LogoutIcon />
-        </button>
-      </div>
-    </aside>
+      </aside>
+    </div>
   );
 };
 
