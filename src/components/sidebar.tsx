@@ -39,78 +39,87 @@ const Sidebar = () => {
   };
 
   return (
-    <div ref={ref}>
-      {/*SIDEBAR BUTTON  */}
-      <button
-        className="fixed left-3 top-5 p-2 z-30 sm:hidden rounded-full bg-primary"
-        onClick={() => setOpenSidebar((prev) => !prev)}
-      >
-        <OpenBar />
-      </button>
-
-      <aside
-        className={`w-20 z-50 h-screen overflow-y-scroll 2xl:overflow-y-visible scrollbar flex flex-col justify-between gap-24 py-5 dark:bg-gray-900 bg-[#F7F8FA] fixed sm:left-0 top-0 border-r dark:border-gray-700 border-[#EBECF2] transition-all duration-500 ${
-          openSidebar ? "left-0" : "-left-20"
+    <>
+      {/* BLUR OVERLAY */}
+      <div
+        className={`fixed h-screen inset-0 w-full backdrop-blur-[2px] z-40 transition-opacity duration-500 ${
+          openSidebar ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
-      >
-        <div className="flex flex-col gap-6 2xl:gap-8 items-center">
-          <button>
-            <Logo />
-          </button>
+      ></div>
 
-          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-            <CategoryIcon />
-            <span className="absolute -right-5 top-1/2 -translate-y-1/2">
-              <SelectBar />
-            </span>
-          </button>
+      <div ref={ref}>
+        {/*SIDEBAR BUTTON  */}
+        <button
+          className="fixed left-3 top-5 p-2 z-30 sm:hidden rounded-full bg-primary"
+          onClick={() => setOpenSidebar((prev) => !prev)}
+        >
+          <OpenBar />
+        </button>
 
-          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-            <TrendUpIcon />
-          </button>
-
-          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-            <ProfileIcon />
-          </button>
-
-          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-            <BoxIcon />
-          </button>
-
-          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-            <DiscountIcon />
-          </button>
-
-          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-            <InfoIcon />
-          </button>
-
-          <div className="w-[46px] p-2 dark:bg-[#0a0327] bg-white h-[92px] rounded-full flex flex-col gap-4">
-            <button onClick={() => selectTheme("light")}>
-              <SunIcon />
+        <aside
+          className={`w-20 z-50 h-screen overflow-y-scroll 2xl:overflow-y-visible scrollbar flex flex-col justify-between gap-24 py-5 dark:bg-gray-900 bg-[#F7F8FA] fixed sm:left-0 top-0 border-r dark:border-gray-700 border-[#EBECF2] transition-all duration-500 ${
+            openSidebar ? "left-0" : "-left-20"
+          }`}
+        >
+          <div className="flex flex-col gap-6 2xl:gap-8 items-center">
+            <button>
+              <Logo />
             </button>
 
-            <button onClick={() => selectTheme("dark")}>
-              <MoonIcon />
+            <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+              <CategoryIcon />
+              <span className="absolute -right-5 top-1/2 -translate-y-1/2">
+                <SelectBar />
+              </span>
+            </button>
+
+            <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+              <TrendUpIcon />
+            </button>
+
+            <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+              <ProfileIcon />
+            </button>
+
+            <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+              <BoxIcon />
+            </button>
+
+            <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+              <DiscountIcon />
+            </button>
+
+            <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+              <InfoIcon />
+            </button>
+
+            <div className="w-[46px] p-2 dark:bg-[#0a0327] bg-white h-[92px] rounded-full flex flex-col gap-4">
+              <button onClick={() => selectTheme("light")}>
+                <SunIcon />
+              </button>
+
+              <button onClick={() => selectTheme("dark")}>
+                <MoonIcon />
+              </button>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-6 2xl:gap-8 items-center mb-10">
+            <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+              <ArrowRightIcon />
+            </button>
+
+            <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+              <SettingIcon />
+            </button>
+
+            <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
+              <LogoutIcon />
             </button>
           </div>
-        </div>
-
-        <div className="flex flex-col gap-6 2xl:gap-8 items-center mb-10">
-          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-            <ArrowRightIcon />
-          </button>
-
-          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-            <SettingIcon />
-          </button>
-
-          <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
-            <LogoutIcon />
-          </button>
-        </div>
-      </aside>
-    </div>
+        </aside>
+      </div>
+    </>
   );
 };
 
