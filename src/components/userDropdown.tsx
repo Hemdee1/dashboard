@@ -10,7 +10,7 @@ const UserDropdown = () => {
   return (
     <div className="relative hidden lg:block" ref={ref}>
       <div
-        className="px-2 py-1.5 border border-[#DADDDD] cursor-pointer rounded-full flex gap-3 items-center"
+        className="px-2 py-1.5 border dark:border-gray-600 border-[#DADDDD] dark:bg-[#0a0327] cursor-pointer rounded-full flex gap-3 items-center"
         onClick={() => setOpenDropdown((prev) => !prev)}
       >
         <Image
@@ -22,7 +22,7 @@ const UserDropdown = () => {
         />
 
         <div className="text-right font-Inter">
-          <span className="block text-[#26282C] font-medium">
+          <span className="block dark:text-[#DADDDD] text-[#26282C] font-medium">
             Justin Bergson
           </span>
           <span className="block text-[#787486]">Justin@gmail.com</span>
@@ -34,24 +34,24 @@ const UserDropdown = () => {
       </div>
 
       <div
-        className={`absolute right-0 w-full p-5 bg-white shadow border border-[#DADDD] rounded-lg transition-all duration-500 ${
+        className={`absolute right-0 w-full p-5 dark:bg-[#0a0327] bg-white shadow border dark:border-gray-700 border-[#DADDD] rounded-lg transition-all duration-500 ${
           openDropdown
             ? "top-[70px] opacity-100 visible"
             : "top-[50px] opacity-0 invisible"
         }`}
       >
         <div className="flex gap-5">
-          <span className="w-10 h-10 bg-gray-300 animate-pulse block rounded-full"></span>
+          <span className="w-10 h-10 dark:bg-gray-600 bg-gray-300 animate-pulse block rounded-full"></span>
           <div className="flex items-end flex-col gap-2">
-            <span className="w-32 h-4 rounded-full bg-gray-300 animate-pulse block"></span>
-            <span className="w-32 h-4 rounded-full bg-gray-300 animate-pulse block"></span>
+            <span className="w-32 h-4 rounded-full dark:bg-gray-600 bg-gray-300 animate-pulse block"></span>
+            <span className="w-32 h-4 rounded-full dark:bg-gray-600 bg-gray-300 animate-pulse block"></span>
           </div>
         </div>
         <div className="mt-6 space-y-3">
-          <span className="w-full h-6 block bg-gray-300 animate-pulse rounded-xl"></span>
-          <span className="w-full h-6 block bg-gray-300 animate-pulse rounded-xl"></span>
-          <span className="w-full h-6 block bg-gray-300 animate-pulse rounded-xl"></span>
-          <span className="w-full h-6 block bg-gray-300 animate-pulse rounded-xl"></span>
+          <span className="w-full h-6 block dark:bg-gray-600 bg-gray-300 animate-pulse rounded-xl"></span>
+          <span className="w-full h-6 block dark:bg-gray-600 bg-gray-300 animate-pulse rounded-xl"></span>
+          <span className="w-full h-6 block dark:bg-gray-600 bg-gray-300 animate-pulse rounded-xl"></span>
+          <span className="w-full h-6 block dark:bg-gray-600 bg-gray-300 animate-pulse rounded-xl"></span>
         </div>
       </div>
     </div>

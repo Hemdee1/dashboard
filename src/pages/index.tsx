@@ -14,9 +14,11 @@ const inter = Inter({
 
 export default function Home() {
   return (
-    <div className={`${jakarta.className} ${inter.variable}`}>
+    <div
+      className={`${jakarta.className} ${inter.variable} text-black dark:text-white`}
+    >
       <Layout>
-        <div className="pl-5 sm:pl-[100px] pt-5 sm:pt-[106px] pb-5 pr-5 bg-[#FAFAFA] space-y-5">
+        <div className="pl-5 sm:pl-[100px] pt-5 sm:pt-[106px] pb-20 pr-5 dark:bg-gray-900 bg-[#FAFAFA] space-y-5">
           <div className="flex gap-5 flex-col">
             <div className="flex gap-5 flex-col lg:flex-row">
               <SalesTrend />

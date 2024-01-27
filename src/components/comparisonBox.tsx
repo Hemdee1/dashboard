@@ -8,17 +8,19 @@ const ComparisonBox = ({ data }: { data: (typeof comparisonData)[0] }) => {
   const decrease = prevMonthValue > value;
 
   return (
-    <article className="p-4 bg-white w-full lg:w-[240px] border border-[#EDF2F7] rounded-[14px]">
+    <article className="p-4 dark:bg-[#0a0327] bg-white w-full lg:w-[240px] border dark:border-gray-700 border-[#EDF2F7] rounded-[14px]">
       <div className="flex justify-between items-center">
-        <span className="w-10 h-10 border-[0.7px] border-[#E6E6E6] rounded-full grid place-content-center">
+        <span className="w-10 h-10 border-[0.7px] dark:border-gray-500 border-[#E6E6E6] rounded-full grid place-content-center">
           <Icon />
         </span>
         {decrease ? <DecreaseGraph /> : <IncreaseGraph />}
       </div>
 
       <div className="mt-2.5">
-        <h3 className="text-[#898989] font-medium text-lg">{title}</h3>
-        <h4 className="text-2xl font-semibold mt-1 text-secondary">
+        <h3 className="dark:text-gray-400 text-[#898989] font-medium text-lg">
+          {title}
+        </h3>
+        <h4 className="text-2xl font-semibold mt-1 dark:text-gray-300 text-secondary">
           {title === "Total Income" ? `$${value}.000` : value}
         </h4>
       </div>
@@ -39,7 +41,7 @@ const ComparisonBox = ({ data }: { data: (typeof comparisonData)[0] }) => {
           </span>
         </div>
 
-        <span className="text-sm font-Inter text-[#606060]">
+        <span className="text-sm font-Inter dark:text-gray-400 text-[#606060]">
           vs. previous month
         </span>
       </div>

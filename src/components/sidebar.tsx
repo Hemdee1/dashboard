@@ -14,11 +14,34 @@ import {
   LogoutIcon,
   OpenBar,
 } from "@/icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Sidebar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
   const ref = useOutsideClick(() => setOpenSidebar(false));
+
+  // const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    const LS = localStorage.getItem("dashboard-theme");
+    if (!LS) return;
+
+    const theme = JSON.parse(LS);
+
+    selectTheme(theme);
+  }, []);
+
+  const selectTheme = (theme: "light" | "dark") => {
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("dashboard-theme", JSON.stringify("light"));
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("dashboard-theme", JSON.stringify("dark"));
+    }
+
+    // setTheme(theme);
+  };
 
   return (
     <div ref={ref}>
@@ -31,7 +54,7 @@ const Sidebar = () => {
       </button>
 
       <aside
-        className={`w-20 z-50 h-screen overflow-y-scroll 2xl:overflow-y-visible scrollbar flex flex-col justify-between gap-24 py-5 bg-[#F7F8FA] fixed sm:left-0 top-0 border-r border-[#EBECF2] transition-all duration-500 ${
+        className={`w-20 z-50 h-screen overflow-y-scroll 2xl:overflow-y-visible scrollbar flex flex-col justify-between gap-24 py-5 dark:bg-gray-900 bg-[#F7F8FA] fixed sm:left-0 top-0 border-r dark:border-gray-700 border-[#EBECF2] transition-all duration-500 ${
           openSidebar ? "left-0" : "-left-20"
         }`}
       >
@@ -42,7 +65,7 @@ const Sidebar = () => {
 
           <button className="p-2 rounded-full bg-transparent hover:bg-primary/20 transition-colors duration-500 relative">
             <CategoryIcon />
-            <span className="absolute -right-4 2xl:-right-5 top-1/2 -translate-y-1/2">
+            <span className="absolute -right-5 top-1/2 -translate-y-1/2">
               <SelectBar />
             </span>
           </button>
@@ -67,12 +90,12 @@ const Sidebar = () => {
             <InfoIcon />
           </button>
 
-          <div className="w-[46px] p-2 bg-white h-[92px] rounded-full flex flex-col gap-4">
-            <button>
+          <div className="w-[46px] p-2 dark:bg-[#0a0327] bg-white h-[92px] rounded-full flex flex-col gap-4">
+            <button onClick={() => selectTheme("light")}>
               <SunIcon />
             </button>
 
-            <button>
+            <button onClick={() => selectTheme("dark")}>
               <MoonIcon />
             </button>
           </div>
@@ -107,6 +130,7 @@ const SelectBar = () => (
     <path
       d="M6.53467e-06 3.02509C7.11773e-06 1.42129 1.40951 0.182713 3 0.388889V21C1.34315 21 4.88293e-07 19.6569 1.09063e-06 18L6.53467e-06 3.02509Z"
       fill="#0D062D"
+      className="fill-current dark:text-white text-[#0D062D]"
     />
   </svg>
 );

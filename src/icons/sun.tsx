@@ -7,7 +7,13 @@ const SunIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="30" height="30" rx="15" fill="#34CAA5" />
+      <rect
+        width="30"
+        height="30"
+        rx="15"
+        fill="#34CAA5"
+        className="fill-current text-[#34CAA5] dark:text-transparent"
+      />
       <g clip-path="url(#clip0_1826_462)">
         <path
           d="M15 19.2188C17.33 19.2188 19.2188 17.33 19.2188 15C19.2188 12.67 17.33 10.7812 15 10.7812C12.67 10.7812 10.7812 12.67 10.7812 15C10.7812 17.33 12.67 19.2188 15 19.2188Z"
