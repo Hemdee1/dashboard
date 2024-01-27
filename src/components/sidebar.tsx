@@ -38,6 +38,14 @@ const Sidebar = () => {
     }
   };
 
+  useEffect(() => {
+    if (openSidebar) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "scroll";
+    }
+  }, [openSidebar]);
+
   return (
     <>
       {/* BLUR OVERLAY */}
