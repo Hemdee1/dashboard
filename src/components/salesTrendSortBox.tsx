@@ -11,13 +11,13 @@ const SalesTrendSortBox = () => {
 
   return (
     <div className="relative" ref={ref}>
-      <div
+      <button
         className="flex px-4 py-2 gap-1 sm:gap-2.5 items-center rounded-full border dark:border-gray-600 border-[#E1DFDF] cursor-pointer"
         onClick={() => setOpenDropdown((prev) => !prev)}
       >
         <span className="text-xs font-Inter">{sortBy}</span>
         <ArrowDownIcon />
-      </div>
+      </button>
 
       <div
         className={`absolute right-0 z-10 w-full dark:bg-[#0a0327] bg-white shadow border dark:border-gray-500 border-[#DADDD] rounded-lg transition-all duration-500 ${

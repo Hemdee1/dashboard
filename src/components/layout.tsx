@@ -6,7 +6,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <>
       <Sidebar />
       <Header />
-      {children}
+      <div className="min-h-screen dark:bg-gray-900 bg-[#FAFAFA]">
+        {children}
+      </div>
     </>
   );
 };

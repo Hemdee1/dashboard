@@ -1,5 +1,6 @@
 import { range, salesData } from "@/data";
 import SalesTrendSortBox from "./salesTrendSortBox";
+import { motion } from "framer-motion";
 
 const SalesTrend = () => {
   return (
@@ -34,9 +35,14 @@ const SalesTrend = () => {
               const rangePercent = (sale / highestRange) * 100;
 
               return (
-                <article
+                <motion.article
                   key={index}
-                  style={{ height: `${rangePercent}%` }}
+                  initial={{ height: 0 }}
+                  animate={{ height: `${rangePercent}%` }}
+                  transition={{
+                    duration: 0.8,
+                    delay: 0.2 + index / 20,
+                  }}
                   className="w-[30px] bg-primary/10 dark:bg-primary/15 rounded-t-full group relative"
                 >
                   <Tooltip sale={sale} />
@@ -44,7 +50,7 @@ const SalesTrend = () => {
                   <span className="absolute -bottom-8 left-0 text-sm text-center text-[#898989]">
                     {month}
                   </span>
-                </article>
+                </motion.article>
               );
             })}
           </div>

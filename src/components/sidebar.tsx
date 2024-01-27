@@ -20,14 +20,11 @@ const Sidebar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
   const ref = useOutsideClick(() => setOpenSidebar(false));
 
-  // const [theme, setTheme] = useState<"light" | "dark">("light");
-
   useEffect(() => {
     const LS = localStorage.getItem("dashboard-theme");
     if (!LS) return;
 
     const theme = JSON.parse(LS);
-
     selectTheme(theme);
   }, []);
 
@@ -39,8 +36,6 @@ const Sidebar = () => {
       document.documentElement.classList.add("dark");
       localStorage.setItem("dashboard-theme", JSON.stringify("dark"));
     }
-
-    // setTheme(theme);
   };
 
   return (

@@ -28,9 +28,9 @@ const UserDropdown = () => {
           <span className="block text-[#787486]">Justin@gmail.com</span>
         </div>
 
-        <span>
+        <button>
           <ArrowDownIcon />
-        </span>
+        </button>
       </div>
 
       <div
