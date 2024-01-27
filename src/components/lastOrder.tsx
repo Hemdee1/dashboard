@@ -5,13 +5,15 @@ const LastOrder = () => {
   return (
     <section className="w-full pt-5 dark:bg-[#0a0327] bg-white border dark:border-gray-700 border-[#EDF2F7] rounded-[14px]">
       <div className="flex justify-between items-center px-5">
-        <h2 className="text-lg font-semibold text-[#26282C] dark:text-white">
+        <h2 className="text-base sm:text-lg font-semibold text-[#26282C] dark:text-white">
           Last Orders
         </h2>
-        <button className="text-lg font-medium text-primary">See All</button>
+        <button className="text-base sm:text-lg font-medium text-primary">
+          See All
+        </button>
       </div>
 
-      <div className="mt-4 overflow-x-scroll sm:overflow-x-visible scrollbar pb-5 px-5">
+      <div className="mt-4 text-sm sm:text-base overflow-x-scroll sm:overflow-x-visible scrollbar pb-5 px-5">
         <div className="flex  text-[#9CA4AB] w-[700px] sm:w-auto">
           <span className="flex-[1.5]">Name</span>
           <span className="flex-[1]">Date</span>

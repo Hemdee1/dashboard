@@ -17,10 +17,10 @@ const ComparisonBox = ({ data }: { data: (typeof comparisonData)[0] }) => {
       </div>
 
       <div className="mt-2.5">
-        <h3 className="dark:text-gray-400 text-[#898989] font-medium text-lg">
+        <h3 className="dark:text-gray-400 text-[#898989] font-medium text-base sm:text-lg">
           {title}
         </h3>
-        <h4 className="text-2xl font-semibold mt-1 dark:text-gray-300 text-secondary">
+        <h4 className="text-xl sm:text-2xl font-semibold mt-1 dark:text-gray-300 text-secondary">
           {title === "Total Income" ? `$${value}.000` : value}
         </h4>
       </div>

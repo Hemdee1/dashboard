@@ -24,7 +24,7 @@ const OrderBox = ({ order }: { order: (typeof ordersData)[0] }) => {
       >
         {status}
       </span>
-      <button className="flex flex-[0.5] gap-1.5 items-center text-sm">
+      <button className="flex flex-[0.5] gap-1.5 items-center text-xs sm:text-sm">
         <DownloadIcon />
         <span>View</span>
       </button>

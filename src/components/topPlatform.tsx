@@ -5,10 +5,12 @@ const TopPlatform = () => {
   return (
     <section className="py-4 px-5 dark:bg-[#0a0327] bg-white border dark:border-gray-700 border-[#EDF2F7] rounded-[14px] sm:min-w-[496px]">
       <div className="flex justify-between items-center">
-        <h2 className="text-lg font-semibold text-[#26282C] dark:text-white">
+        <h2 className="text-base sm:text-lg font-semibold text-[#26282C] dark:text-white">
           Top Platform
         </h2>
-        <button className="text-lg font-medium text-primary">See All</button>
+        <button className="text-base sm:text-lg font-medium text-primary">
+          See All
+        </button>
       </div>
 
       <div className="mt-5 space-y-5">

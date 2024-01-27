@@ -6,7 +6,7 @@ const SalesTrend = () => {
   return (
     <section className="w-full h-[380px] py-4 dark:bg-[#0a0327] bg-white border dark:border-gray-700 border-[#EDF2F7] rounded-[14px]">
       <div className="flex justify-between items-center px-5">
-        <h2 className="text-lg font-semibold">Sales Trends</h2>
+        <h2 className="text-base sm:text-lg font-semibold">Sales Trends</h2>
         <div className="flex gap-1 sm:gap-2.5 items-center">
           <h4 className="text-sm font-medium text-nowrap">Sort by :</h4>
           <SalesTrendSortBox />
