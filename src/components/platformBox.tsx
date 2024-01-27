@@ -21,7 +21,7 @@ const PlatformBox = ({ data }: { data: (typeof topPlatformData)[0] }) => {
           className="absolute inset-y-0 left-0 w-[30%] rounded-full"
         />
       </div>
-      <div className="flex justify-between gap-5 text-base sm:text-lg dark:text-gray-500 text-[#525252]">
+      <div className="flex justify-between gap-5 text-sm sm:text-lg dark:text-gray-500 text-[#525252]">
         <span> ${price}</span>
         <span>+{interest}%</span>
       </div>
