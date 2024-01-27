@@ -37,7 +37,7 @@ const SalesTrend = () => {
                 <article
                   key={index}
                   style={{ height: `${rangePercent}%` }}
-                  className="w-[30px] bg-primary/10 rounded-t-full group relative"
+                  className="w-[30px] bg-primary/10 dark:bg-primary/15 rounded-t-full group relative"
                 >
                   <Tooltip sale={sale} />
                   <GradientAnimation />
@@ -64,7 +64,7 @@ const Tooltip = ({ sale }: { sale: number }) => (
 const GradientAnimation = () => (
   <>
     <span className="absolute rounded-t-full bg-gradient-new inset-0 opacity-0 transition-all duration-500 group-hover:opacity-100" />
-    <span className="absolute rounded-t-full bg-primary/10 inset-0 opacity-100 transition-all duration-500 group-hover:opacity-0" />
+    <span className="absolute rounded-t-full bg-primary/10 dark:bg-primary/15 inset-0 opacity-100 transition-all duration-500 group-hover:opacity-0" />
   </>
 );
 
