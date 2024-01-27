@@ -10,14 +10,14 @@ const TrendingDownArrow = () => {
       <path
         d="M1.5 3.5L4.5 6.5L6.5 4.5L10.5 8.5"
         stroke="#ED544E"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M7 8.5H10.5V5"
         stroke="#ED544E"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

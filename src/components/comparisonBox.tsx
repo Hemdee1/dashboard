@@ -28,7 +28,9 @@ const ComparisonBox = ({ data }: { data: (typeof comparisonData)[0] }) => {
       <div className="mt-2.5 flex gap-2.5 items-center">
         <div
           className={`px-2 py-1 flex gap-1 rounded-full bg-opacity-10 ${
-            decrease ? "bg-error/10" : "bg-primary/10"
+            decrease
+              ? "bg-error/10 dark:bg-error/30"
+              : "bg-primary/10 dark:bg-primary/30"
           }`}
         >
           {decrease ? <TrendingDownArrow /> : <TrendingUpArrow />}
